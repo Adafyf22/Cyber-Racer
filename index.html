@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Racer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="car-selection" class="modal">
+    <h1>Select Your Ride</h1>
+    <div class="car-options">
+      <div class="car-option" data-speed="5" data-acceleration="3" data-handling="4">
+        <h3>Cyber Phantom</h3>
+        <p>Speed 5 / Accel 3 / Handling 4</p>
+      </div>
+      <div class="car-option" data-speed="4" data-acceleration="5" data-handling="3">
+        <h3>Neo Lightning</h3>
+        <p>Speed 4 / Accel 5 / Handling 3</p>
+      </div>
+      <div class="car-option" data-speed="3" data-acceleration="4" data-handling="5">
+        <h3>Quantum Drift</h3>
+        <p>Speed 3 / Accel 4 / Handling 5</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="game" class="hidden">
+    <header>
+      <h1>Cyber Racer</h1>
+      <div id="credits">Credits: <span id="money">0</span></div>
+    </header>
+    <main>
+      <section id="stats" class="panel">
+        <h2>Your Car</h2>
+        <ul>
+          <li>Speed: <span id="speed">0</span></li>
+          <li>Acceleration: <span id="acceleration">0</span></li>
+          <li>Handling: <span id="handling">0</span></li>
+        </ul>
+      </section>
+
+      <section id="actions" class="panel">
+        <button id="raceBtn">Race</button>
+        <button id="taskBtn">Do Task</button>
+      </section>
+
+      <section id="shop" class="panel">
+        <h2>Shop Upgrades</h2>
+        <div class="shop-item" data-type="speed" data-value="2" data-cost="100">
+          Turbo Booster (+2 Speed) - 100
+        </div>
+        <div class="shop-item" data-type="acceleration" data-value="2" data-cost="100">
+          Quantum Engine (+2 Accel) - 100
+        </div>
+        <div class="shop-item" data-type="handling" data-value="2" data-cost="100">
+          Nano Tires (+2 Handling) - 100
+        </div>
+      </section>
+
+      <section id="log" class="panel"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
